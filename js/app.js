@@ -156,56 +156,57 @@
 // ========================================= 12-MASALA ============================================= //
 
 // const checkFrozenStatus = (obj) => {
-//   return obj;
+//   if (Object.isFrozen(obj)) {
+//     console.log("Frozen");
+//   } else {
+//     console.log("Not Frozen");
+//   }
 // };
 
-// const result = checkFrozenStatus({
+// const result = {
 //   name: "Malibu",
-// });
+// };
 
 // Object.freeze(result);
 
-// if (Object.isFrozen(result)) {
-//   console.log("Frozen");
-// } else {
-//   console.log("Not Frozen");
-// }
+// checkFrozenStatus(result);
 
 // ========================================= 13-MASALA ============================================= //
 
 // function addProperty(obj, key, value) {
-//   return obj;
+//   if (Object.isSealed(obj)) {
+//     console.log("Cannot add new property");
+//   } else {
+//     console.log(obj);
+//   }
 // }
 
-// let result = addProperty({
+// const result = {
 //   name: "Ali",
 //   age: 25,
-// });
+// };
 
 // Object.seal(result);
 
-// if (Object.isSealed(result)) {
-//   result = "Cannot add new property";
-// }
-// console.log(result);
+// addProperty(result);
 
 // ========================================= 14-MASALA ============================================= //
 
 // function isItSealed(obj) {
-//   return "brand" in obj;
+//   if (Object.isSealed(result)) {
+//     console.log("Sealed");
+//   } else {
+//     console.log("Not Sealed");
+//   }
 // }
 
-// const result = isItSealed({
+// const result = {
 //   brand: "iPhone",
-// });
+// };
 
 // Object.seal(result);
 
-// if (Object.isSealed(result)) {
-//   console.log("Sealed");
-// } else {
-//   console.log("Not Sealed");
-// }
+// isItSealed(result);
 
 // ========================================= 15-MASALA ============================================= //
 
